@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Project</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Projects Section -->
+<section id="projects" class="projects-section">
+  <div class="projects-container">
+    
+    <!-- Top Navigation / Home Button -->
+    <div class="nav-bar">
+      <a href="index.html" class="home-btn">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M19 12H5M12 19l-7-7 7-7"/>
+        </svg>
+        <span>Back to Home</span>
+      </a>
+    </div>
+
+    <!-- Section Header -->
+    <div class="section-header">
+      <span class="sub-badge">Featured Engineering</span>
+      <h2 class="section-title">Selected Works</h2>
+      <p class="section-desc">Practical implementations spanning systems architecture, embedded utilities, and low-latency services.</p>
+    </div>
+
+    <!-- Project Grid -->
+    <div class="project-grid">
+      <!-- Project 1 -->
+      <article class="project-card">
+        <div class="card-top">
+          <div class="folder-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+            </svg>
+          </div>
+          <div class="card-links">
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" title="View Source">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+              </svg>
+            </a>
+            <a href="#" target="_blank" rel="noopener noreferrer" title="Live Preview">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <h3 class="card-title">Distributed Task Scheduler</h3>
+        <p class="card-body">
+          A high-throughput worker pool executing delayed jobs and retries with priority queues and minimal memory overhead.
+        </p>
+        <div class="tech-tags">
+          <span class="tag">C / C++</span>
+          <span class="tag">POSIX</span>
+          <span class="tag">Redis</span>
+          <span class="tag">Docker</span>
+        </div>
+      </article>
+
+      <!-- Project 2 -->
+      <article class="project-card">
+        <div class="card-top">
+          <div class="folder-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+            </svg>
+          </div>
+          <div class="card-links">
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" title="View Source">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+              </svg>
+            </a>
+            <a href="#" target="_blank" rel="noopener noreferrer" title="Live Preview">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <h3 class="card-title">Fintech Webhook Reconciliation</h3>
+        <p class="card-body">
+          Idempotent payment notification ingest engine with automated cryptographic signature verification and fallback logging.
+        </p>
+        <div class="tech-tags">
+          <span class="tag">Node.js</span>
+          <span class="tag">PostgreSQL</span>
+          <span class="tag">REST API</span>
+          <span class="tag">HMAC</span>
+        </div>
+      </article>
+
+      <!-- Project 3 -->
+      <article class="project-card">
+        <div class="card-top">
+          <div class="folder-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+            </svg>
+          </div>
+          <div class="card-links">
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" title="View Source">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+              </svg>
+            </a>
+            <a href="#" target="_blank" rel="noopener noreferrer" title="Live Preview">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <h3 class="card-title">Network Packet Inspector</h3>
+        <p class="card-body">
+          A terminal utility for real-time Ethernet frame capture, TCP stream reassembly, and protocol header decoding.
+        </p>
+        <div class="tech-tags">
+          <span class="tag">C</span>
+          <span class="tag">Raw Sockets</span>
+          <span class="tag">Linux</span>
+          <span class="tag">CLI</span>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+    
+</body>
+</html>

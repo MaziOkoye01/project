@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Academic Planner | Okoye Kenneth Somto</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+
+    <main class="container27">
+
+        <header class="header27">
+
+            <div class="header-content27">
+
+                <p class="small-title27">
+                    MY ACADEMIC PLANNER
+                </p>
+
+                <h1 class="main-title27">
+                    Welcome, Kenneth
+                </h1>
+
+                <p class="subtitle27">
+                    Stay organized, manage your tasks and keep track
+                    of your academic events.
+                </p>
+
+            </div>
+
+            <a href="index.html" class="home-button27">
+
+                <i data-lucide="house"></i>
+
+                Back to Home
+
+            </a>
+
+        </header>
+
+
+        <section class="profile-card27">
+
+            <div class="profile-icon27">
+
+                <i data-lucide="graduation-cap"></i>
+
+            </div>
+
+            <div class="profile-info27">
+
+                <h2 class="profile-name27">
+                    Okoye Kenneth Somto
+                </h2>
+
+                <p class="profile-school27">
+                    Miva Open University
+                </p>
+
+                <span class="profile-department27">
+                    Software Engineering
+                </span>
+
+            </div>
+
+        </section>
+
+
+        <section class="stats27">
+
+            <div class="stat-card27">
+
+                <i data-lucide="list-checks"></i>
+
+                <div class="stat-info27">
+
+                    <h3 id="totalTasks27">
+                        0
+                    </h3>
+
+                    <p class="stat-label27">
+                        Total Tasks
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="stat-card27">
+
+                <i data-lucide="check-circle"></i>
+
+                <div class="stat-info27">
+
+                    <h3 id="completedTasks27">
+                        0
+                    </h3>
+
+                    <p class="stat-label27">
+                        Completed
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="stat-card27">
+
+                <i data-lucide="calendar-days"></i>
+
+                <div class="stat-info27">
+
+                    <h3 id="totalEvents27">
+                        0
+                    </h3>
+
+                    <p class="stat-label27">
+                        Events
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="grid27">
+
+
+            <div class="card27">
+
+                <div class="card-heading27">
+
+                    <div class="heading-content27">
+
+                        <h2 class="card-title27">
+                            My Tasks
+                        </h2>
+
+                        <p class="card-description27">
+                            Add and manage your academic tasks.
+                        </p>
+
+                    </div>
+
+                    <i data-lucide="clipboard-list"></i>
+
+                </div>
+
+
+                <form id="taskForm27" class="task-form27">
+
+                    <input
+                        type="text"
+                        id="taskInput27"
+                        class="task-input27"
+                        placeholder="Enter a task..."
+                        required
+                    >
+
+
+                    <select
+                        id="taskPriority27"
+                        class="task-priority-select27"
+                    >
+
+                        <option value="Low">
+                            Low Priority
+                        </option>
+
+                        <option value="Medium" selected>
+                            Medium Priority
+                        </option>
+
+                        <option value="High">
+                            High Priority
+                        </option>
+
+                    </select>
+
+
+                    <button
+                        type="submit"
+                        class="task-submit27"
+                    >
+
+                        <i data-lucide="plus"></i>
+
+                        Add Task
+
+                    </button>
+
+                </form>
+
+
+                <div class="filters27">
+
+                    <button
+                        class="filter27 active"
+                        data-filter="all"
+                        type="button"
+                    >
+                        All
+                    </button>
+
+                    <button
+                        class="filter27"
+                        data-filter="pending"
+                        type="button"
+                    >
+                        Pending
+                    </button>
+
+                    <button
+                        class="filter27"
+                        data-filter="completed"
+                        type="button"
+                    >
+                        Completed
+                    </button>
+
+                </div>
+
+
+                <div
+                    id="taskList27"
+                    class="task-list27"
+                ></div>
+
+            </div>
+
+
+            <div class="card27">
+
+                <div class="card-heading27">
+
+                    <div class="heading-content27">
+
+                        <h2 class="card-title27">
+                            Academic Events
+                        </h2>
+
+                        <p class="card-description27">
+                            Keep track of important academic dates.
+                        </p>
+
+                    </div>
+
+                    <i data-lucide="calendar"></i>
+
+                </div>
+
+
+                <form
+                    id="eventForm27"
+                    class="event-form27"
+                >
+
+                    <input
+                        type="text"
+                        id="eventName27"
+                        class="event-name-input27"
+                        placeholder="Event name..."
+                        required
+                    >
+
+
+                    <input
+                        type="date"
+                        id="eventDate27"
+                        class="event-date-input27"
+                        required
+                    >
+
+
+                    <button
+                        type="submit"
+                        class="event-submit27"
+                    >
+
+                        <i data-lucide="calendar-plus"></i>
+
+                        Add Event
+
+                    </button>
+
+                </form>
+
+
+                <div
+                    id="eventList27"
+                    class="event-list27"
+                ></div>
+
+            </div>
+
+        </section>
+
+
+        <section class="card27 progress-card27">
+
+            <div class="card-heading27">
+
+                <div class="heading-content27">
+
+                    <h2 class="card-title27">
+                        Study Progress
+                    </h2>
+
+                    <p class="card-description27">
+                        Your completed task progress.
+                    </p>
+
+                </div>
+
+                <strong id="progressText27">
+                    0%
+                </strong>
+
+            </div>
+
+
+            <div class="progress-bar27">
+
+                <div
+                    id="progressFill27"
+                    class="progress-fill27"
+                ></div>
+
+            </div>
+
+        </section>
+
+
+        <footer class="footer27">
+
+            <p>
+                Academic Planner © 2026 — Okoye Kenneth Somto
+            </p>
+
+        </footer>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
