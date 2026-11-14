@@ -6,13 +6,21 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-
 .contact-body {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     background: #1f242d;
+    margin: 0; 
+    padding: 20px; /* Adds breathing room on small screens */
+}
+
+.contacts {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .contacts h2 {
@@ -21,17 +29,21 @@
     text-align: center;
     margin-bottom: 10px;
 }
+
 .contacts form {
-    width: 600px;
+    width: 100%;
+    max-width: 600px; /* Adapts to screen size but won't exceed 600px */
     text-align: center;
 }
+
 form .input-box {
     display: flex;
     justify-content: space-between;
+    gap: 15px; /* Cleaner way to space flex items */
 }
 
 .input-box .input-field {
-    width: 48.5%;
+    width: 100%; /* Lets flexbox and gap handle the width */
 }
 
 .field .item {
@@ -45,8 +57,9 @@ form .input-box {
     color: white;
     margin: 12px 0;
 }
+
 .field .item::placeholder {
-    color: rgb(255, 255, 255, 3)
+    color: rgba(255, 255, 255, 0.3);
 }
 
 .field .error-txt {
@@ -65,7 +78,15 @@ form .textarea-field .error-txt {
     margin-top: 10px;
 }
 
-form button {
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    gap: 15px;
+}
+
+form button, form a {
     padding: 12px 32px;
     background: #800020;
     border: none;
@@ -77,26 +98,33 @@ form button {
     letter-spacing: 1px;
     font-weight: 600;
     cursor: pointer;
-    margin-top: 20px;
     transition: 0.5s;
+    text-decoration: none; 
 }
-form button:hover {
+
+form button:hover, form a:hover {
     box-shadow: none;
 }
-form a {
-    padding: 12px 32px;
-    background: #800020;
-    border: none;
-    outline: none;
-    border-radius: 6px;
-    box-shadow: 0 0 10px #800020;
-    font-size: 16px;
-    color: #333;
-    letter-spacing: 1px;
-    font-weight: 600;
-    cursor: pointer;
-    margin-top: 20px;
-    transition: 0.5s;
+
+/* --- MOBILE RESPONSIVENESS --- */
+@media (max-width: 600px) {
+    form .input-box {
+        flex-direction: column; /* Stacks the Name/Email and Phone/Subject fields vertically */
+        gap: 0; /* Removes gap since fields have bottom margins */
+    }
+    
+    .button-group {
+        flex-direction: column; /* Stacks the buttons vertically */
+    }
+
+    form button, form a {
+        width: 100%; 
+        text-align: center;
+    }
+    
+    .contacts h2 {
+        font-size: 32px; 
+    }
 }
 /*--------------html----------*/
 
