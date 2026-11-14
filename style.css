@@ -291,7 +291,10 @@ nav ul li a:hover::after{
 /* ------------small screen--------- */
 @media (max-width: 1080px){
     #header{
-        background-image: url(phone\ background.png);
+        background-image: url(phone\ background.webp);
+        background-size: 80%;
+        background-position: 100px;
+        background-repeat: no-repeat
     }
     .header-text{
         margin-top: 20%;
